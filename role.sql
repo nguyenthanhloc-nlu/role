@@ -50,7 +50,9 @@ ON DBO.SAN_PHAM
 TO QUANLY
 GO
 
--- them user vào role
+-- them user vào role -- 
 sp_addRoleMember 'quanly', 'user1';
+
+-- xóa user khỏi role -- 
 go
 sp_droprolemember 'quanly', 'user1'
